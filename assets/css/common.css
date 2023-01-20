@@ -1,0 +1,39 @@
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.inner{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* 구입하기 버튼 */
+.link-buy{
+    font-size: 12px;
+    display: inline-block;
+    white-space: nowrap;
+    background: #0071e3;
+    color: #fff;
+    border-radius: 980px;
+    padding: 4px 11px;
+}
+.link-buy:hover{
+    text-decoration: none;
+    background: #147ce5;
+}

@@ -1,0 +1,1736 @@
+.link-more{
+    color: #06c;
+}
+.link-more::after{
+    display: inline-block;
+    content: "";
+    padding-left: 6px;
+}
+
+
+/* 섹션 공통 */
+section .head-area .desc{
+    color: #1d1d1f;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    margin: 76px auto 0;
+    text-align: center;
+}
+section .desc-gray{
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #6e6e73;
+}
+section .desc-bk{
+    color: #1d1d1f;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+section .link-learn{
+    /* position: absolute;
+    left: 100%; */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    width: 450px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-left: auto;
+    margin-right: 50px;
+}
+section .link-learn .text{
+    display: inline-block;
+    line-height: 1.2;
+}
+section .link-learn .arrow{
+    margin-left: 20px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(50deg,#2ca2b4,#5598de 45%,#7f87ff);
+}
+section .link-learn .arrow svg{
+    color: #fff;
+}
+
+section .aside-box{
+    margin-top: 57px;
+    padding: 24px 0;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    position: relative;
+    height: 173px;
+}
+section .aside-box::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+
+}
+section .aside-box .ic-privacy{
+    position: absolute;
+    left: 0;
+}
+section .aside-box .ic-privacy::after{
+    background-image: url('../images/icon_privacy__h221g5o3pbiq_large.png');
+    background-repeat: no-repeat;
+    background-size: 456px 208px;
+    background-position: 0 0;
+    width: 38px; height: 52px;
+    display: block;
+    margin-top: -6px;
+    content: '';
+}
+section .aside-box .ic-privacy.roc::after{
+    background-image: url('../images/icon_privacy__h221g5o3pbiq_large.png');
+    background-repeat: no-repeat;
+    background-size: 456px 208px;
+    background-position: 0 -160px;
+    width: 38px; height: 52px;
+    display: block;
+    margin-top: -6px;
+    content: '';
+}
+section .aside-box .ic-recycle{
+    position: absolute;
+    left: 0;
+}
+section .aside-box .ic-recycle::after{
+    background-image: url('../images/ic-recycle.png');
+    background-repeat: no-repeat;
+    background-size: 31px 37px;
+    width: 31px; height: 37px;
+    display: block;
+    margin-top: 2px;
+    content: '';
+}
+section .aside-box .text{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+.sc-main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 980px;
+}
+.sc-main .logo{
+    display: block;
+    width: 750px;
+}
+
+
+
+/* .fix-spancer */
+.fix-spancer{
+    position: relative;
+}
+
+.sc-main-size{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+    /* background: #ccc; */
+}
+.sc-main-size .inner{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    transform: translateY(20%);
+}
+
+
+.sc-main-size .left-wrap{
+    position: relative;
+}
+.sc-main-size .left-wrap .head-text{
+    top: -57px;
+    right: 70px;
+    transform:  skewX(0deg) skewY(-15deg) rotateY(20deg);
+
+}
+
+.sc-main-size .right-wrap{
+    position: relative;
+}
+.sc-main-size .right-wrap .head-text{
+    top: -106px;
+    left: 0;
+    transform: skewX(0deg) skewY(15deg) rotateY(-20deg);
+
+}
+
+.sc-main-size .head-text{
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    perspective: 1600px;
+    perspective-origin: 50% 600px;
+    /* z-index: 2; */
+}
+.sc-main-size .head-text span{
+    display: inline-block;
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -0.023em;
+    /* transition: all 600ms ease; */
+    transform-style: preserve-3d;
+}
+
+
+.sc-main-size .info-box{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* z-index: 3; */
+    perspective: 1600px;
+    perspective-origin: 50% 600px;
+}
+.sc-main-size .info-box > *{
+    font-size: 50px;
+    transform-style: preserve-3d;
+}
+.sc-main-size .info-box .pro-name{
+    font-size: 30px;
+}
+
+.sc-main-size .img-wrapper{
+    position: relative;
+
+}
+.sc-main-size .left-wrap .info-box{
+    top: 12%;
+    right: 80px;
+    transform: skewX(0deg) skewY(-15deg) rotateY(-30deg);
+
+}
+.sc-main-size .right-wrap .info-box{
+    top: 12%;
+    left:40px;
+    transform: skewX(0deg) skewY(15deg) rotateY(30deg);
+}
+
+.sc-main-size .img-box{
+    position: relative;
+}
+.sc-main-size .left-wrap .img-box{
+    position: relative;
+    -webkit-mask-size: 779px 1318px;
+    mask-size: 779px 1318px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../images/left-hand.png);
+    mask-image: url(../images/left-hand.png);
+    
+}
+.sc-main-size .right-wrap .img-box{
+    position: relative;
+    -webkit-mask-size: 820px 1318px;
+    mask-size: 820px 1318px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../images/right-hand.png);
+    mask-image: url(../images/right-hand.png);
+}
+.sc-main-size [class*="pro-"]{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.sc-main-bat{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: #00f; */
+}
+.sc-main-bat .text{
+    width: 600px;
+    font-weight: 600;
+    font-size: 100px;
+    opacity: 1;
+    scale: 1;
+    text-align: center;
+    transform-style:preserve-3d;
+}
+.sc-main-bat .text p{
+    /* transform: translateZ(30px);
+    transform: perspective(150px); */
+   
+}
+
+
+
+
+
+.sc-main-light{
+    margin-top: 150px;
+    overflow: hidden;
+    position: relative;
+    /* background: #0f0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sc-main-light .title{
+    font-weight: 600;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 100px 0;
+    transform-style:preserve-3d;
+    /* perspective: 1500px; */
+    transform: perspective(150px) rotateX(-30deg) rotateY(-30deg);
+}
+.sc-main-light .img-box{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+.sc-main-light img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    height: 80vh
+
+}
+
+.sc-main-buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #0f0; */
+    height: 100vh;
+    margin-top: 50px;
+}
+.sc-main-buy strong{
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.sc-main-buy .title-wrap{
+    margin-bottom: 30px;
+    transform-style:preserve-3d;
+    transform: perspective(350px) rotateX(-90deg);
+
+
+}
+.sc-main-buy .title{
+    color: #1d1d1f;
+    font-size: 96px;
+    font-weight: 600;
+}
+.sc-main-buy .img-box{
+    position: relative;
+    display: flex;
+    width: 1704px;
+
+}
+.sc-main-buy .img-box img{
+    position: relative;
+
+}
+
+
+
+.sc-main-buy .img-mid{
+    top: 154px;
+    left: 199px;
+}
+.sc-main-buy .img-blue{
+    top: 23px;
+    left: 40px;
+}
+.sc-main-buy .img-star{
+    
+}
+.sc-main-buy .img-pur{
+    top: 23px;
+    right: 40px;
+}
+.sc-main-buy .img-red{
+    top: 154px;
+    right: 199px;
+}
+
+
+
+.sc-main-buy .price{
+    margin-top: 120px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.sc-main-buy .link-more{
+    font-size: 24px;
+    font-weight: 600;
+}
+.sc-main-buy .link-box{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+.sc-main-buy .link-more.video::after{
+    content: "";
+}
+
+.sc-title{
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* 갤러리 */
+.sc-gallery{
+    padding-top: 98px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    width: 980px;
+}
+.sc-gallery .text{
+    color: #6e6e73;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.sc-gallery .title{
+    color: #1d1d1f;
+    font-size: 40px;
+    font-weight: 600;
+}
+.sc-gallery .color-title{
+    font-size: 56px;
+    font-weight: 600;
+}
+.sc-gallery .color-box{
+    border-style: none;
+}
+.sc-gallery .color-list{
+    display: flex;
+    gap: 10px;
+}
+.sc-gallery .color-item{
+    position: relative;
+}
+.sc-gallery .color-item.active::after{
+    
+}
+.sc-gallery .color-item [class*="link-"]{
+    display: block;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.sc-gallery .link-blue{ background: #c0cfde;}
+.sc-gallery .link-purple{ background: #e7d7e9;}
+.sc-gallery .link-midnight{ background: #31353a;}
+.sc-gallery .link-starlight{ background: #f0ece8;}
+.sc-gallery .link-red{ background: #e11c2a;}
+.gallery-info1{
+    gap: 20px;
+    grid-row-end: span 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 1;}
+.gallery-info1 .text{
+    text-align: center;
+}
+.gallery-info2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    order: 2;
+    padding: 30px 0 0 30px;
+}
+.gallery-info2 .text-box{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.gallery-info3{
+    display: flex;
+    align-items: end;
+    order: 3;
+}
+.gallery-info3 img{
+    padding-left: 15px;
+}
+.gallery-info4{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 4;
+}
+.gallery-info5{
+    display: flex;
+    flex-wrap: wrap;
+    order: 5;
+}
+.gallery-info5 img{
+    padding: 30px 0 0 30px;
+    max-width: inherit;
+}
+.gallery-info6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    order: 6;
+}
+.gallery-info7{
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 7;
+}
+.gallery-info7 .info-box{
+    display: flex;
+    gap: 16px;
+    padding: 18px;
+    align-items: end;
+}
+.gallery-info7 .info-box .title{
+    font-size: 24px;
+    line-height: 30px;
+}
+.gallery-info7 .info-box .text{
+    font-weight: 500;
+}
+[class*="gallery-"]{
+    background: #f5f5f7;
+    border-radius: 18px;
+    display: flex;
+    overflow: hidden;
+    min-height: 336px;
+}
+
+/* 잠금화면 */
+.sc-lock{
+    position: relative;
+    margin-top: 98px;
+    padding: 166px 0 82px;
+    background: #f5f5f7;
+    overflow: hidden;
+}
+.sc-lock .title-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: auto;
+    padding-right: 50%;
+}
+.sc-lock .title-box span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 105px;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.sc-lock .desc-gray{
+    display: inline-block;
+    margin: 38px 0 243px;
+    
+}
+.sc-lock .aside-box{
+    margin-top: 250px;
+}
+.lock{
+    height: 768px;
+    margin-left: 60%;
+    
+}
+.sc-lock .swiper{
+    position: relative;
+    overflow: inherit;
+    
+}
+.sc-lock .swiper-slide{
+    transition: opacity 0.5s;
+}
+.sc-lock .swiper-slide.hide{
+    opacity: 0;
+    
+}
+
+.sc-lock .btn-box{
+    position: absolute;
+    left: 0; bottom: 0;
+    transform: translateY(100px);
+    width: 100%;
+    height: 52px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sc-lock .btn-nav{
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: rgba(210,210,215,.64);
+    color: rgba(0,0,0,.56);
+    display: flex;
+    justify-content: center;
+}
+.sc-lock .btn-nav::after{
+    transform: translateY(10%);
+    font-size: 53px;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: inherit;
+    font-style: normal;
+    font-family: 'SF Pro Icons';
+}
+.sc-lock .btn-nav.prev::after{
+    content: "";
+}
+.sc-lock .btn-nav.next::after{
+    content: "";
+}
+
+/* .swiper-slide.active:first-child .btn-nav.prev,
+.swiper-slide.active:last-child .btn-nav.next{
+    opacity: .4;
+} */
+
+
+
+/* 충돌방지 */
+.sc-crash{
+    position: relative;
+}
+.sc-crash .head-area{
+    width: 100%; height: 900px;
+    background-image: url('../images/crash_detection_hero__e8hadzk27vqm_large.jpg');
+    background-size: 100%;
+    object-position: top center;
+    object-fit: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc-crash .head-title{
+    z-index: 1;
+    color: #fff;
+    font-size: 96px;
+    font-weight: 600;
+
+}
+.sc-crash .info-area{
+    position: relative;
+    padding: 120px 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.sc-crash .info-area .desc-gray{
+    color: #6e6e73;
+    font-size: 32px;
+    font-weight: 600;
+    width: 45vw;
+}
+/* .sc-crash .link-learn{
+    position: absolute;
+    right: 0;bottom: 0;
+    padding-right: 50px;
+    bottom: 0;
+    text-align: left;
+    display: inline-block;
+}
+.sc-crash .link-learn .text{
+    background: #f00;
+    display: inline-block;
+    white-space: nowrap;
+    width: 50%;
+    overflow: hidden;
+} */
+
+
+
+/* 배터리 */
+.sc-battery{
+    padding: 84px 0 66px;
+}
+.sc-battery .head-area{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sc-battery .head-area .title-sm{
+    font-size: 96px;
+    color: #1d1d1f;
+    font-weight: 600;
+}
+.sc-battery .head-area .title-big{
+    font-size: 290px;
+    color: #00d959;
+    font-weight: 600;
+    margin-left: -40px;
+    background: linear-gradient(to right, rgb(0,217,89)50%, rgb(0,0,0)50%);
+    background-size: 200%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.sc-battery .head-area .desc-bk{
+    margin-top: 50px;
+    text-align: center;
+}
+.sc-battery .head-area img{
+    display: flex;
+    margin-left: auto;
+    margin-right: 180px;
+}
+.sc-battery .head-area .thumb-box{position: relative;}
+.sc-battery .head-area .thumb-box .bat-bk{}
+.sc-battery .head-area .thumb-box .bat-gr{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1; position: absolute; top: 0; left: 438px;}
+
+
+.sc-battery .info-area{
+    margin-top: 92px;
+    padding-bottom: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.sc-battery .info-area span{
+    color: #6e6e73;
+    font-size: 19px;
+    font-weight: 600;
+    display: block;
+}
+.sc-battery .info-area strong{
+    color: #1d1d1f;
+    font-size: 48px;
+    font-weight: 600;
+}
+.sc-battery .info-area p{
+    color: #6e6e73;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+/* 슈퍼사이즈 디스플레이 */
+.sc-XDR .head-area{
+    padding-top: 110px;
+    background: #f5f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sc-XDR .head-area span{
+    color: #1d1d1f;
+    font-size: 96px;
+    line-height: 110px;
+    font-weight: 600;
+}
+.sc-XDR .head-area strong{
+    font-size: 96px;
+    line-height: 110px;
+    font-weight: 600;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.sc-XDR .head-area .desc-bk{
+    margin: 50px 0;
+    text-align: center;
+}
+.sc-XDR .info-area{
+    padding: 58px 0 68px;
+}
+.sc-XDR .info-area .info-list{
+    margin-bottom: 68px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.sc-XDR .info-area .info-list li{
+    width: 245px;
+    color: #6e6e73;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.sc-XDR .info-area .info-list li span{
+    color: #1d1d1f;
+}
+.sc-XDR .info-area .tip-box{
+    width: 50%;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 25px;
+
+}
+.sc-XDR .info-area .ic-light{
+    margin: inherit;
+    display: block;
+    background-image: url('../images/xdr_display_icon__ef0ubcl7jamq_large.jpg');
+    background-repeat: no-repeat;
+    width: 39px; height: 39px;
+}
+.sc-XDR .info-area .tip-box span{
+    display: inline-block;
+    margin-top: 14px;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.sc-XDR .info-area .tip-box p{
+    margin-top: 5px;
+}
+
+/* 카메라 */
+.sc-camera{
+    margin-top: 123px;
+}
+.sc-camera .head-area{
+    display: flex;
+    flex-direction: column;
+}
+.sc-camera .head-area .title{
+    font-size: 96px;
+    font-weight: 600;
+    text-align: center;
+    transform: translate3d(-12px, 48px, -271px) rotateY(37deg) rotate(13deg) skewX(13deg) scale(1.6);
+}
+.sc-camera .head-area .title strong{
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sc-camera .info-area{
+    padding-top: 100px;
+    background: #f5f5f7;
+    z-index: 1;
+}
+.sc-camera .info-area .inner.text{
+    display: flex;
+}
+.sc-camera .info-area .fixed{
+    font-size: 96px;
+    font-weight: 600;
+    padding-right: 20px;
+    display: inline-block;
+}
+.sc-camera .info-area strong{
+    display: block;
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.sc-camera .info-area strong span{
+    /* transform: translateY(0px); */
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    font-size: 96px;
+    font-weight: 600;    
+}
+.sc-camera .info-area strong .roof2{
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.sc-camera .img-box{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sc-camera .text-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 40px;
+}
+.sc-camera .desc-gray{
+    flex: 1;
+    width: 50%;
+}
+.sc-camera .camera-list{
+    flex: 1;
+    display: flex;
+}
+.sc-camera .camera-list li{
+    flex: 1;
+}
+.sc-camera .camera-list li span{
+    display: block;
+    color: #6e6e73;
+    font-size: 17px;
+}
+.sc-camera .camera-list li strong{
+    font-size: 24px;
+    font-weight: 500;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 10%,#7f87ff 20%,#f65aad 40%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/* 흔들려도 차분하게 - 비디오 */
+.sc-video{
+    margin: 0 auto;
+    background: #f5f5f7;
+    padding-top: 100px;
+}
+.sc-video .text-box{
+    text-align: left;
+}
+.sc-video .text-box .word{
+    font-size: 96px;
+    font-weight: 600;
+}
+.sc-video .head-area .thumb-box{
+    padding-top: 50px;
+}
+.sc-video .head-area .thumb-box video{
+    margin: 0 auto;
+}
+.sc-video .head-area .desc-wrap{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.sc-video .head-area .desc{
+    color: #6e6e73;
+    font-size: 19px;
+    margin: 0 auto;
+}
+.sc-video .head-area .btn-box{
+    height: 50px;
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    display: flex;
+    color: #0071e3;
+    font-weight: 500;
+}
+.sc-video .head-area .btn-play{display: none;}
+.sc-video .head-area .btn-replay{display: none;}
+.sc-video .head-area .btn-play::after{
+    content: "";
+    font-family: 'SF Pro Icons';
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.sc-video .head-area .btn-stop::after{
+    content: "";
+    font-family: 'SF Pro Icons';
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    text-decoration: none;
+    padding-left: 5px;
+}
+.sc-video .head-area .btn-replay::after{
+    content: "";
+    font-family: 'SF Pro Icons';
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.sc-video .head-area .desc-gray{
+    width: 50%;
+    padding-bottom: 100px;
+    margin-top: 40px;
+}
+
+
+/* 영화 */
+.sc-video .sub-area{
+    padding: 132px 0 96px;
+    background: #fff;
+}
+.sc-video .sub-area .title{
+    color: #1d1d1f;
+    font-size: 96px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.sc-video .sub-area .text-box{
+    display: flex;
+    text-align: left;
+    gap: 50px;
+    padding-top: 40px;
+}
+.sc-video .sub-area .desc-gray{
+    flex: 1;
+}
+.sc-video .sub-area .info-box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sc-video .sub-area .info-box strong{
+    font-size: 24px;
+    font-weight: 500;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sc-video .sub-area .info-box span{
+    display: block;
+    color: #6e6e73;
+    font-size: 17px;
+}
+
+.sc-video .sub-area .ic-mv{
+    display: inline-block;
+    background-image: url('../images/sc-video-ic-movie.png');
+    background-repeat: no-repeat;
+    background-size: 55px 55px;
+    width: 55px; height: 55px;
+    margin-left: 5px;
+}
+.sc-video .sub-area .thumb-box{
+    position: relative;
+    
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;
+}
+.sc-video .sub-area .cover-box{
+    position: absolute;
+    top: 0; bottom: 0;
+    /* width: calc(50vw - 490px); */
+    width: calc(50vw - 0);
+    background: #fff;
+    z-index: 1;
+}
+.sc-video .sub-area .cover-box.left{
+    left: 0;
+}
+.sc-video .sub-area .cover-box.right{
+    right: 0;
+}
+.sc-video .sub-area .thumb-box video{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+}
+.sc-video .sub-area .btn-box{
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 36px; height: 36px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+}
+.sc-video .sub-area .btn-box .btn-play{
+    display: none;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    background-image: url('../images/movie-play.svg');
+    background-repeat: no-repeat;
+    width: 20px; height: 20px;
+    background-position: center;
+    opacity: 0.5;
+}
+.sc-video .sub-area .btn-box .btn-stop{
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    background-image: url('../images/movie-prev.svg');
+    background-repeat: no-repeat;
+    width: 20px; height: 20px;
+    background-position: center;
+    opacity: 0.5;
+}
+.sc-video .sub-area .btn-box .btn-replay{
+    display: none;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    background-image: url('../images/movie-replay.svg');
+    background-repeat: no-repeat;
+    width: 20px; height: 20px;
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+/* 셀피 */
+.sc-self{
+    padding: 85px 0 135px;
+    position: relative;
+}
+.sc-self video{
+    width: 384px; height: 816px;
+}
+.sc-self .head-area .ic-self{
+    width: 84px; height: 70px;
+}
+.sc-self .head-area .title{
+    padding-top: 30px;
+    font-size: 96px;
+    font-weight: 600;
+    text-align: center;
+}
+.sc-self .grid-box{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 64px;
+}
+.sc-self .grid-box .desc-gray{
+    flex: 1;
+}
+.sc-self .grid-box .text{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.sc-self .grid-box .text span{
+    color: #6e6e73;
+    font-size: 17px;
+    font-weight: 600;
+}
+.sc-self .grid-box .text strong{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 600;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 10%,#7f87ff 20%,#f65aad 30%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.sc-self .aside-inner{
+    display: flex;
+    gap: 50px;
+}
+.sc-self .aside-box{
+    width: 50%;
+}
+.sc-self .aside-box .text{
+    width: 70%;
+}
+/* .sc-self .link-learn{
+    display: block;
+    padding-right: 50px;
+    right: 100px;
+    bottom: 0;
+    width: 100%;
+    margin: 100px 0 80px;
+} */
+
+/* a15 */
+.sc-a15{
+    padding: 166px 0 82px;
+    background: #f5f5f7;
+    gap: 20px;
+}
+.sc-a15 .thumb-box{
+    position: relative;
+}
+.sc-a15 video{
+    position: absolute;
+    top: 0px;left: 0;
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../images/a15_mask.png);
+    mask-image: url(../images/a15_mask.png);
+}
+.sc-a15 .title{
+    color: #1d1d1f;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+}
+.sc-a15 .title strong{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    display: block;
+    font-size: 96px;
+    background: linear-gradient(90deg,#2ca2b4,#5598de 10%,#7f87ff 20%,#f65aad 30%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.sc-a15 .info-box{
+    margin:50px 0 130px;
+}
+.sc-a15 .info-box .desc-gray{
+    padding-top: 25px;
+}
+
+
+.sc-info{
+    padding: 94px 0;
+}
+.sc-info .ar-area{
+    background: #f5f5f7;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+/* 아이콘 패스 */
+.sc-info .ar-area .img-box{
+    width: 30%;
+    margin-top: 72px;
+
+}
+.sc-info .ar-area .text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sc-info .ar-area .title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 38px;
+}
+.sc-info .ar-area .desc-small{
+    font-size: 21px;
+    font-weight: 600;
+    color: #6e6e73;
+}
+.sc-info .vari-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+.sc-info .vari-box{
+    background: #f5f5f7;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sc-info .vari-box .info-wrap{
+    padding: 54px 35px 10px;
+}
+.sc-info .vari-box .title{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+}
+.sc-info .vari-box .link-more{
+    display: block;
+    text-align: center;
+}
+.sc-info .vari-box img{
+    margin: 0 auto;
+    
+}
+.sc-info .vari-box .bottom{
+    padding-bottom: 30px;
+}
+
+/*sc-info 아이콘 */
+.sc-info .ic-privacy{
+    background-image: url('../images/info-ic-02.jpeg');
+    background-size: 34px 46px;
+    width: 34px; height: 46px;
+}
+.sc-info .ic-recycle{
+    background-image: url('../images/info-ic-03.jpeg');
+    background-size: 34px 46px;
+    width: 34px; height: 46px;
+}
+.sc-info .ic-ios16{
+    background-image: url('../images/info-ic-04.jpeg');
+    background-size: 42px 42px;
+    width: 42px; height: 42px;
+}
+.sc-info .ic-we{
+    background-image: url('../images/info-ic-05.png');
+    background-size: 41px 41px;
+    width: 41px; height: 41px;
+}
+
+
+
+
+/* 즐기는 방법 */
+.sc-enjoy{
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    padding: 114px 0;
+}
+.sc-enjoy .swiper{
+    padding: 0 200px;
+}
+.sc-enjoy .swiper-slide{
+    width: 300px;
+}
+.enjoy{
+    margin-top: 65px;
+}
+.enjoy ul{
+    position: relative;
+}
+.enjoy li{
+    padding: 36px 40px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5%);
+    background-color: #fff;
+    height: 365px;
+    width: 200px;
+    margin: 20px 20px 20px 0;
+}
+.enjoy .ic-app img{
+    height: 46px;
+}
+.enjoy .text{
+    margin: 45px 0 30px;
+    font-weight: 500;
+    font-size: 19px;
+}
+.enjoy .text .title{
+    background: linear-gradient(90deg,#2ca2b4,#5598de 10%,#7f87ff 20%,#f65aad 30%,#ec3d43);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.sc-enjoy .btn-nav{
+    position: absolute;
+    top: 50%;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.sc-enjoy .btn-nav::after{
+    transform: translateY(10%);
+    font-size: 53px;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: inherit;
+    font-style: normal;
+    font-family: 'SF Pro Icons';
+    opacity: 0.7;
+}
+.sc-enjoy .btn-nav.prev{
+    left: 20px;
+}
+.sc-enjoy .btn-nav.prev::after{
+    content: "";
+}
+.sc-enjoy .btn-nav.next{
+    right: 20px;
+}
+.sc-enjoy .btn-nav.next::after{
+    content: "";
+}
+.sc-enjoy .btn-nav.prev.swiper-button-disabled,
+.sc-enjoy .btn-nav.next.swiper-button-disabled{
+    opacity: 0;
+    transition: .2s;
+}
+
+
+
+
+
+.sc-iphone{
+    padding: 70px 0 30px;
+    line-height: 1.5;
+}
+
+/* 메인 폰 이미지 */
+.sc-iphone .img-14pro{
+    background-image: url('../images/compare_iphone_14_pro__f4vf691cwqmy_large_2x.jpeg');
+    background-repeat: no-repeat;
+    background-size: 190px 257px;
+    width: 190px; height: 257px;
+}
+.sc-iphone .img-14{
+    background-image: url('../images//iphone14.jpeg');
+    background-repeat: no-repeat;
+    background-size: 180px 257px;
+    width: 180px; height: 257px;
+}
+.sc-iphone .img-13{
+    background-image: url('../images/iphone13.jpeg');
+    background-repeat: no-repeat;
+    background-size: 161px 257px;
+    width: 161px; height: 257px;
+}
+.sc-iphone .img-se{
+    background-image: url('../images/iphonese.jpeg');
+    background-repeat: no-repeat;
+    background-size: 151px 257px;
+    width: 151px; height: 257px;
+}
+
+/* 컬러스와치 이미지 */
+.sc-iphone .img-14proswatch{
+    background-image: url('../images/swatch_iphone_14_pro__cf5r1gxjozyq_large_2x.png');
+    background-repeat: no-repeat;
+    background-size: 68px 14px;
+    width: 68px; height: 14px;
+}
+.sc-iphone .img-14swatch{
+    background-image: url('../images/iphone14-swatch.png');
+    background-repeat: no-repeat;
+    background-size: 86px 14px;
+    width: 86px; height: 14px;
+}
+.sc-iphone .img-13swatch{
+    background-image: url('../images/iphone13-swatch.png');
+    background-repeat: no-repeat;
+    background-size: 104px 14px;
+    width: 104px; height: 14px;
+}
+.sc-iphone .img-seswatch{
+    background-image: url('../images/iphonese-swatch.png');
+    background-repeat: no-repeat;
+    background-size: 50px 14px;
+    width: 50px; height: 14px;
+}
+
+
+.column-grid{
+    margin-top: 68px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(10,auto);
+    grid-row-gap: 40px;
+    grid-column-gap: 34px;
+    grid-template-areas: 
+    "iphone-14-pro iphone-14 iphone-13 iphone-se"
+    "iphone-14-pro-dp iphone-14-dp iphone-13-dp iphone-se-dp"
+    "iphone-14-pro-di iphone-14-di iphone-13-di iphone-se-di"
+    "iphone-14-pro-sos iphone-14-sos iphone-13-sos iphone-se-sos"
+    "iphone-14-pro-camera iphone-14-camera iphone-13-camera iphone-se-camera"
+    "iphone-14-pro-bat iphone-14-bat iphone-13-bat iphone-se-bat"
+    "iphone-14-pro-a16 iphone-14-a16 iphone-13-a16 iphone-se-a16"
+    "iphone-14-pro-face iphone-14-face iphone-13-face iphone-se-face"
+    "iphone-14-pro-fiveg iphone-14-fiveg iphone-13-fiveg iphone-se-fiveg";
+}
+/* grid-area 영역 이름 정하기 */
+.iphone-14-pro{ grid-area: iphone-14-pro; }
+.iphone-14-pro.dp{ grid-area: iphone-14-pro-dp; }
+.iphone-14-pro.di{ grid-area: iphone-14-pro-di; }
+.iphone-14-pro.sos{ grid-area: iphone-14-pro-sos; }
+.iphone-14-pro.camera{ grid-area: iphone-14-pro-camera; }
+.iphone-14-pro.bat{ grid-area: iphone-14-pro-bat; }
+.iphone-14-pro.a16{ grid-area: iphone-14-pro-a16; }
+.iphone-14-pro.face{ grid-area: iphone-14-pro-face; }
+.iphone-14-pro.fiveg{ grid-area: iphone-14-pro-fiveg; }
+
+
+.iphone-14{ grid-area: iphone-14; }
+.iphone-14.dp{ grid-area: iphone-14-dp; }
+.iphone-14.di{ grid-area: iphone-14-di; }
+.iphone-14.sos{ grid-area: iphone-14-sos; }
+.iphone-14.camera{ grid-area: iphone-14-camera; }
+.iphone-14.bat{ grid-area: iphone-14-bat; }
+.iphone-14.a16{ grid-area: iphone-14-a16; }
+.iphone-14.face{ grid-area: iphone-14-face; }
+.iphone-14.fiveg{ grid-area: iphone-14-fiveg; }
+
+.iphone-13{ grid-area: iphone-13; }
+.iphone-13.dp{ grid-area: iphone-13-dp; }
+.iphone-13.di{ grid-area: iphone-13-di; }
+.iphone-13.sos{ grid-area: iphone-13-sos; }
+.iphone-13.camera{ grid-area: iphone-13-camera; }
+.iphone-13.bat{ grid-area: iphone-13-bat; }
+.iphone-13.a16{ grid-area: iphone-13-a16; }
+.iphone-13.face{ grid-area: iphone-13-face; }
+.iphone-13.fiveg{ grid-area: iphone-13-fiveg; }
+
+.iphone-se{ grid-area: iphone-se; }
+.iphone-se.dp{ grid-area: iphone-se-dp; }
+.iphone-se.di{ grid-area: iphone-se-di; }
+.iphone-se.sos{ grid-area: iphone-se-sos; }
+.iphone-se.camera{ grid-area: iphone-se-camera; }
+.iphone-se.bat{ grid-area: iphone-se-bat; }
+.iphone-se.a16{ grid-area: iphone-se-a16; }
+.iphone-se.face{ grid-area: iphone-se-face; }
+.iphone-se.fiveg{ grid-area: iphone-se-fiveg; }
+
+[class*="row-"] {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* 폰 로고이미지 */
+.sc-iphone .phone-logo14{
+    background-image: url('../images/logo_iphone_14_pro.png');
+    background-repeat: no-repeat;
+    background-size: 137px 20px;
+    width: 137px; height: 20px;
+}
+.sc-iphone .phone-logo14pro{
+    background-image: url('../images/iphone14-title.png');
+    background-repeat: no-repeat;
+    background-size: 98px 20px;
+    width: 98px; height: 20px;
+}
+.sc-iphone .phone-logo13{
+    background-image: url('../images/iphone13-title.png');
+    background-repeat: no-repeat;
+    background-size: 96px 20px;
+    width: 96px; height: 20px;
+}
+.sc-iphone .phone-logose{
+    background-image: url('../images/iphonese-title.png');
+    background-repeat: no-repeat;
+    background-size: 98px 20px;
+    width: 98px; height: 20px;
+}
+
+
+.sc-iphone .link-box{
+    margin-top: 40px;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+.sc-iphone .link-box .link-more{
+    display: block;
+    line-height: 32px;
+}
+.sc-iphone .link-box .link-more::after{
+    display: inline-block;
+    content: "";
+    padding-left: 6px;
+    line-height: 32px;
+}
+
+
+/* 내용 공통 */
+.sc-iphone .main{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d2d2d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+
+.sc-iphone .desc{
+    font-size: 17px;
+    min-height: 50px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+}
+.sc-iphone .new{
+    font-size: 12px;
+    font-weight: 400;
+    color: #bf4800;
+    display: block;
+}
+.sc-iphone .price{
+    font-size: 14px;
+    font-weight: 400;
+}
+.sc-iphone .sub-title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.sc-iphone .sub-desc{
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    color: #1d1d1f;
+}
+.sc-iphone .sub-desc.top{
+    padding-top: 12px;
+}
+.sc-iphone .sub-desc2{
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    color: #6e6e73;
+}
+
+/* 아이콘 */
+[class*="ic-"] {
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 auto 8px;
+}
+.sc-iphone i img{
+    margin: 0 auto;
+}
+.ic-di{
+    background-image: url('../images/icon_dynamic_island.png');
+    background-size: 38px 38px;
+    width: 38px; height: 38px;
+}
+.ic-sos{
+    background-image: url('../images/icon_sos.png');
+    background-size: 39px 39px;
+    width: 39px; height: 39px;
+}
+.ic-camera{
+    background-size: 36px 36px;
+    width: 36px; height: 36px;
+}
+.iphone-14-pro .ic-camera{
+    background-image: url('../images/icon_14_pro_camera.png');
+}
+.iphone-14 .ic-camera{
+    background-image: url('../images/iphone14-camera.png');
+}
+.iphone-13 .ic-camera{
+    background-image: url('../images/iphone13-camera.png');
+}
+.iphone-se .ic-camera{
+    background-image: url('../images/iphonese-camera.png');
+}
+
+.ic-bat{
+    background-image: url('../images/icon_battery.png');
+    background-size: 43px 22px;
+    width: 43px; height: 22px;
+}
+.ic-a16{
+    background-image: url('../images/icon_a16.png');
+    background-size: 38px 38px;
+    width: 38px; height: 38px;
+}
+.ic-a15{
+    background-image: url('../images/a15-icon.png');
+    background-size: 38px 38px;
+    width: 38px; height: 38px;
+}
+.ic-face{
+    background-image: url('../images/icon_face_id.png');
+    background-size: 38px 38px;
+    width: 38px; height: 38px;
+}
+.iphone-se .ic-face{
+    background-image: url('../images/touchid-icon.png');
+    background-size: 39px 38px;
+    width: 39px; height: 38px;
+}
+.ic-5g{
+    background-image: url('../images/icon_5g.png');
+    background-size: 50px 36px;
+    width: 50px; height: 36px;
+}
+
+
+
+
+
+/* sc-iphone2 */
+.sc-iphone2{
+    color: #1d1d1f;
+    padding: 160px 0 135px;
+}
+.sc-iphone2 ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.sc-iphone2 li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.sc-iphone2 .title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.sc-iphone2 .desc{
+    font-size: 19px;
+    line-height: 23px;
+}
