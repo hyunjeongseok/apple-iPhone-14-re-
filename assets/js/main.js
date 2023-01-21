@@ -519,8 +519,7 @@ $(function(){
         trigger:".sc-video .sub-area",
         start:"0% 100%",
         end:"20% 0%",
-        scrub:true,
-        markers:true
+        scrub:true
       },
       width: 'calc(50vw - 490px)'
     })

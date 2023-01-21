@@ -196,14 +196,12 @@ section .aside-box .text{
     position: absolute;
     perspective: 1600px;
     perspective-origin: 50% 600px;
-    /* z-index: 2; */
 }
 .sc-main-size .head-text span{
     display: inline-block;
     font-size: 120px;
     line-height: 1;
     letter-spacing: -0.023em;
-    /* transition: all 600ms ease; */
     transform-style: preserve-3d;
 }
 
@@ -285,11 +283,6 @@ section .aside-box .text{
     text-align: center;
     transform-style:preserve-3d;
 }
-.sc-main-bat .text p{
-    /* transform: translateZ(30px);
-    transform: perspective(150px); */
-   
-}
 
 
 
@@ -299,7 +292,6 @@ section .aside-box .text{
     margin-top: 150px;
     overflow: hidden;
     position: relative;
-    /* background: #0f0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -312,7 +304,6 @@ section .aside-box .text{
     margin-bottom: 20px;
     padding: 100px 0;
     transform-style:preserve-3d;
-    /* perspective: 1500px; */
     transform: perspective(150px) rotateX(-30deg) rotateY(-30deg);
 }
 .sc-main-light .img-box{
@@ -325,7 +316,6 @@ section .aside-box .text{
     left: 50%;
     transform: translateX(-30%);
     height: 80vh
-
 }
 
 .sc-main-buy{
@@ -333,7 +323,6 @@ section .aside-box .text{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: #0f0; */
     height: 100vh;
     margin-top: 50px;
 }
@@ -365,7 +354,6 @@ section .aside-box .text{
 }
 .sc-main-buy .img-box img{
     position: relative;
-
 }
 
 
@@ -377,9 +365,6 @@ section .aside-box .text{
 .sc-main-buy .img-blue{
     top: 23px;
     left: 40px;
-}
-.sc-main-buy .img-star{
-    
 }
 .sc-main-buy .img-pur{
     top: 23px;
@@ -449,9 +434,6 @@ section .aside-box .text{
 }
 .sc-gallery .color-item{
     position: relative;
-}
-.sc-gallery .color-item.active::after{
-    
 }
 .sc-gallery .color-item [class*="link-"]{
     display: block;
@@ -634,10 +616,6 @@ section .aside-box .text{
     content: "";
 }
 
-/* .swiper-slide.active:first-child .btn-nav.prev,
-.swiper-slide.active:last-child .btn-nav.next{
-    opacity: .4;
-} */
 
 
 
@@ -676,21 +654,6 @@ section .aside-box .text{
     font-weight: 600;
     width: 45vw;
 }
-/* .sc-crash .link-learn{
-    position: absolute;
-    right: 0;bottom: 0;
-    padding-right: 50px;
-    bottom: 0;
-    text-align: left;
-    display: inline-block;
-}
-.sc-crash .link-learn .text{
-    background: #f00;
-    display: inline-block;
-    white-space: nowrap;
-    width: 50%;
-    overflow: hidden;
-} */
 
 
 
@@ -730,7 +693,6 @@ section .aside-box .text{
     margin-right: 180px;
 }
 .sc-battery .head-area .thumb-box{position: relative;}
-.sc-battery .head-area .thumb-box .bat-bk{}
 .sc-battery .head-area .thumb-box .bat-gr{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     z-index: -1; position: absolute; top: 0; left: 438px;}
@@ -872,10 +834,8 @@ section .aside-box .text{
     display: block;
     position: relative;
     width: 100%;
-    /* overflow: hidden; */
 }
 .sc-camera .info-area strong span{
-    /* transform: translateY(0px); */
     display: block;
     position: absolute;
     top: 0; left: 0;
@@ -1074,7 +1034,6 @@ section .aside-box .text{
 .sc-video .sub-area .cover-box{
     position: absolute;
     top: 0; bottom: 0;
-    /* width: calc(50vw - 490px); */
     width: calc(50vw - 0);
     background: #fff;
     z-index: 1;
@@ -1185,14 +1144,6 @@ section .aside-box .text{
 .sc-self .aside-box .text{
     width: 70%;
 }
-/* .sc-self .link-learn{
-    display: block;
-    padding-right: 50px;
-    right: 100px;
-    bottom: 0;
-    width: 100%;
-    margin: 100px 0 80px;
-} */
 
 /* a15 */
 .sc-a15{
