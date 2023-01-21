@@ -9,10 +9,6 @@
 }
 
 
-body{
-    width: 100%;
-    overflow-x: hidden;
-}
 
 .inner{
     max-width: 980px;
