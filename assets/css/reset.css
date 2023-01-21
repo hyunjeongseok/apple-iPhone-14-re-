@@ -8,6 +8,9 @@ a {text-decoration:none;}
 ul{list-style: none;}
 table {border-collapse:collapse;border-spacing:0;}
 body{
+    min-width: 1200px;
     font-family:'SF Pro KR','SF Pro Text','SF Pro Icons','Helvetica Neue','Helvetica','Arial',sans-serif;
     line-height: 1.2;
+    width: 100%;
+    overflow-x: hidden;
 }
